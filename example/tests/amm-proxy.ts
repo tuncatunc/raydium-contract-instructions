@@ -62,7 +62,7 @@ describe("amm-proxy", () => {
       market: globalInfo.market,
     });
     // wait for transaction success
-    sleep(60000);
+    await sleep(60000);
 
     // get serum market info
     const market = await getMarket(
